@@ -431,7 +431,7 @@ def push_files_to_repo(repo_name: str, files: list[dict]):
 def run_task(data: dict):
     """Run the task in the background and report results."""
     task_round = data.get("round")
-    repo_name = f"{data['task']}_{data['nonce']}"
+    repo_name = f"{data['task']}"
     nonceee=data.get('nonce')
     email=data.get('email',STUDENT_EMAIL)
     task=data.get('task')
